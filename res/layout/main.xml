@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+	<ImageView
+	    android:id="@+id/location_image"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:scaleType="centerCrop"
+	    android:src="@drawable/bkg" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="top"
+	    android:layout_marginTop="100dp"
+	    android:background="#66FFFFFF"
+	    android:gravity="right" >
+
+		<TextView
+		    android:id="@+id/weather_text"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical"
+		    android:layout_marginRight="10dp"
+		    android:text="2013/07/30\n30\u2103"
+		    android:textSize="25sp"
+		    android:textStyle="bold" />
+
+		<ImageView
+		    android:id="@+id/weather_icon"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="right"
+		    android:layout_marginRight="10dp"
+		    android:src="@drawable/cloudy" />
+
+	</LinearLayout>
+
+	<ImageButton
+	    android:id="@+id/refresh"
+	    android:layout_width="24dp"
+	    android:layout_height="24dp"
+	    android:layout_gravity="bottom|right"
+	    android:layout_marginBottom="5dp"
+	    android:layout_marginRight="5dp"
+	    android:background="@null"
+	    android:scaleType="fitXY"
+	    android:src="@drawable/ic__refresh" />
+   
+</FrameLayout>
